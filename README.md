@@ -2,4 +2,5 @@
 
 Docker Java (JDK) base image used for micro service containers.
 
-Java Version: 7u80-b15 
+Java Version: 7u80-b15
+ 
