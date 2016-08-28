@@ -21,8 +21,9 @@ build:
 tag:
 	docker pull amarkwalder/cdk-java-jdk:${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-b${JAVA_VERSION_BUILD}
 	docker tag amarkwalder/cdk-java-jdk:${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-b${JAVA_VERSION_BUILD} amarkwalder/cdk-java-jdk:${JAVA_VERSION_MAJOR}
-	docker tag amarkwalder/cdk-java-jdk:${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-b${JAVA_VERSION_BUILD} amarkwalder/cdk-java-jdk:latest
 	docker push amarkwalder/cdk-java-jdk:${JAVA_VERSION_MAJOR}
+	docker tag amarkwalder/cdk-java-jdk:${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-b${JAVA_VERSION_BUILD} amarkwalder/cdk-java-jdk:latest
+	docker push amarkwalder/cdk-java-jdk:latest
 .PHONY: tag
 
 run: build
