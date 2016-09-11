@@ -1,4 +1,4 @@
-FROM amarkwalder/cdk-base:0.1.0
+FROM amarkwalder/cdk-base:0.1.1
 MAINTAINER André Markwalder <andre.markwalder@gmail.com>
 
 ENV     JAVA_VERSION_MAJOR=8 \
