@@ -12,7 +12,7 @@ WORKDIR	/tmp
 RUN	curl -jksSLH "Cookie: oraclelicense=accept-securebackup-cookie" "${DOWNLOAD_URL}" | gunzip -c - | tar -xf - && \
 	mkdir -p /usr/lib/jvm/ && \
 	mv jdk1.${JAVA_VERSION_MAJOR}.0_${JAVA_VERSION_MINOR} /usr/lib/jvm/jdk1.${JAVA_VERSION_MAJOR}.0_${JAVA_VERSION_MINOR}/ && \
-	ln -s /usr/lib/jvm/jdk1.${JAVA_VERSION_MAJOR}.0_${JAVA_VERSION_MINOR} /usr/lib/jvm/jdk && \
+	ln -s /usr/lib/jvm/jdk1.${JAVA_VERSION_MAJOR}.0_${JAVA_VERSION_MINOR} /usr/lib/jvm/jdk
 
 WORKDIR	/
 
